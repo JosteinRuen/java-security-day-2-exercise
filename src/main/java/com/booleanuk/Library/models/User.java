@@ -5,14 +5,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 import java.util.HashSet;
 import java.util.Set;
 
-@NoArgsConstructor
-@Data
 @Entity
 @Table(name = "users",
         uniqueConstraints = {
